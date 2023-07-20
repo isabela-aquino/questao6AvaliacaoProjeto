@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grafico de Barras</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="barChart" width="800" height="400"></canvas>
+  <script>
+    var ctx = document.getElementById('barChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['blouses', 'sale', 'skirts', 'trousers'],
+        datasets: [{
+          label: 'Numero de Modelos Distintos',
+          data: [59, 82, 34, 43],
+          backgroundColor: 'rgba(54, 162, 235, 0.5)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        },
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    });
+  </script>
+</body>
+</html>
