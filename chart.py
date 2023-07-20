@@ -30,8 +30,8 @@ html_chart = f'''
         datasets: [{{
           label: 'Numero de Modelos Distintos',
           data: {num_modelos_distintos},
-          backgroundColor: 'rgba(54, 162, 235, 0.5)',
-          borderColor: 'rgba(54, 162, 235, 1)',
+          backgroundColor: 'rgba(54, 0, 56, 0.5)',
+          borderColor: 'rgba(54, 0, 56, 1)',
           borderWidth: 1
         }}]
       }},
